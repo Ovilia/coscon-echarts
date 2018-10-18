@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ECharts</title>
+
+    <style>
+        #container {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        #ui {
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    <div id="ui">
+        <a href="./echarts-doc-gh-pages/public/cn/option.html" target="_blank">文档</a>
+        <a href="./echarts-examples-gh-pages/public/index.html" target="_blank">例子</a>
+    </div>
+
+    <script src="node_modules/echarts/dist/echarts.js"></script>
+    <script>
+        var chart = echarts.init(document.getElementById('container'));
+
+        var option = {
+            xAxis: {
+                type: 'category',
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [820, 932, 901, 934, 1290, 1330, 1320],
+                type: 'line'
+            }]
+        };
+
+        chart.setOption(option);
+    </script>
+</body>
+</html>

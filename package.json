@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ovilia/coscon-echarts/issues"
   },
-  "homepage": "https://github.com/Ovilia/coscon-echarts#readme"
+  "homepage": "https://github.com/Ovilia/coscon-echarts#readme",
+  "dependencies": {
+    "echarts": "^4.2.0-rc.2"
+  }
 }

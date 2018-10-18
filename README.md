@@ -14,11 +14,24 @@
 
 ## 准备工作
 
+### 下载代码
+
 1. 在 GitHub 上 fork 本项目（[Ovilia/coscon-echarts](https://github.com/Ovilia/coscon-echarts)）。
 2. 下载 fork 后的项目到本地
 3. 在项目目录下运行 `npm i`
+4. 下载 [echarts-examples](https://github.com/ecomfe/echarts-examples/archive/gh-pages.zip) 以及 [echarts-doc](https://github.com/ecomfe/echarts-doc/archive/gh-pages.zip) 并解压到本项目目录，命名分别为 `echarts-examples-gh-pages` 以及 `echarts-doc-gh-pages`
+5. 安装 `http-server` 以起服务器：`npm i -g http-server`
+6. 测试安装成功：运行 `http-server`，打开 `http://127.0.0.1:8080/`，应该会看到一个折线图，点击左下角的“文档”和“链接”，应该都有可以查看到相应内容
 
+### 下载数据
 
+可视化的数据哪里来呢？`data` 文件夹下提供了几个例子，你也可以自行从别处获取。
+
+下面列了几个开放数据网站：
+
+- [国家统计局](http://www.stats.gov.cn)
+- [上海市政府数据服务网](http://www.datashanghai.gov.cn)
+- [国内40个免费数据源](https://mp.weixin.qq.com/s?__biz=MjM5MTY5OTI0MQ==&mid=205619145&idx=1&sn=987f6a90f30bd134598f9c80c1c57f3e&scene=5#rd)
 
 ## 动手做吧
 
